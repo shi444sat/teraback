@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: terabox-api
+    env: python
+    buildCommand: ""
+    startCommand: python backend/python/flask_app.py
+    envVars:
+      - key: PORT
+        value: 10000
+    plan: free
